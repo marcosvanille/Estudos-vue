@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Iniciando do Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 </head>
 <body>
 <div id="app">
+    <p>1 {{2 + 2}}</p>
+    <p>2 {{"teste".toUpperCase()}} </p>
+    <p>3 Produto: {{ nome }} </p>
+    <p>4 R$ {{preco}} </p>
+    <p>5 Desconto {{descontos * 100}}% </p>
+    <p>6 Data e hora: {{horaCerta()}} </p>
+    <p>7 Preço com Desconto: R$ {{precoComDesconto}} </p>
+
 
 </div>
 <script>
-    new vue({
-
+    new Vue({
+        el: "#app",
+        data: {
+            nome: 'Caneta',
+            preco: 6.89,
+            descontos: 0.15
+        },
+        methods: {
+            horaCerta() {
+                return new Date().toLocaleString();
+            }
+        },
+        computed: {
+            precoComDesconto() {
+                return this.preco * (1 - this.descontos)
+            }
+        }
     })
 
 </script>
+
 </body>
 </html>
