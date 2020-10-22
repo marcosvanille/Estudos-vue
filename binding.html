@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Binding</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+</head>
+<body class="exercicio">
+<div id="app">
+<!--    <p><a href="{{link}}">Youtube</a></p>-->
+    <p><a v-bind:href="link">canal Youtube</a></p>
+    <p><a :href="link1">Google</a></p>
+</div>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            link: "https://www.youtube.com/watch?v=rHANBi7E2cI",
+            link1: "https://www.google.com"
+        }
+    })
+</script>
 </body>
 </html>
