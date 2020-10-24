@@ -11,13 +11,23 @@
 <!--    <p><a href="{{link}}">Youtube</a></p>-->
     <p><a v-bind:href="link">canal Youtube</a></p>
     <p><a :href="link1">Google</a></p>
+    <p>
+        <input type="text" v-model="nome">
+        <span>{{nome}}</span>
+    </p>
 </div>
 <script>
     new Vue({
         el:"#app",
         data:{
+            nome : "maria",
             link: "https://www.youtube.com/watch?v=rHANBi7E2cI",
             link1: "https://www.google.com"
+        },
+        watch:{
+            nome(novoValor){
+                console.log(novoValor.toUpperCase());
+            }
         }
     })
 </script>
