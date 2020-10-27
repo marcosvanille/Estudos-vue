@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac834128-84e4-4717-83e4-a758d6d7d8b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/estilo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +60,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.estilo.html">
+  <component name="RunManager" selected="JavaScript Debug.template.html">
     <configuration name="estilo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Estudos-vue/estilo.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="template.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Estudos-vue/template.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="v-if.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Estudos-vue/v-if.html" useBuiltInWebServerPort="true">
@@ -69,6 +72,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.template.html" />
         <item itemvalue="JavaScript Debug.estilo.html" />
         <item itemvalue="JavaScript Debug.v-if.html" />
       </list>
@@ -87,7 +91,7 @@
       <workItem from="1601998738987" duration="1690000" />
       <workItem from="1603155296070" duration="4508000" />
       <workItem from="1603516299610" duration="13607000" />
-      <workItem from="1603621063480" duration="1078000" />
+      <workItem from="1603621063480" duration="2050000" />
     </task>
     <servers />
   </component>
