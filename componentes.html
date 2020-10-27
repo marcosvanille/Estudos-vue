@@ -6,8 +6,22 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
+<div id="app">
+    <saudacao nome="Ana"></saudacao>
+    <saudacao nome="Bia"></saudacao>
+    <saudacao nome="Julia"></saudacao>
+</div>
 <script>
-    Vue.component()
+    Vue.component('saudacao',{
+        props:['nome'],
+        template:`
+        <div>Bom dia {{nome}}!</div>
+        `
+    })
+
+    new Vue ({
+        el: "#app"
+    })
 </script>
 </body>
 </html>
